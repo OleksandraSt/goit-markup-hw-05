@@ -143,6 +143,8 @@ button {
 
 .link-item {
     color: var(--secondary-text-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .link-item:hover,
@@ -151,7 +153,21 @@ button {
 }
 
 .link-current {
+    position: relative;
+
     color: var(--accent-color);
+}
+
+.link-current::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
 }
 
 .header-contact {
