@@ -22,6 +22,7 @@ html {
     --border-header-color: #ECECEC;
     --border-portfolio-color: #EEEEEE;
     --hero-background-color: #C4C4C4;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -145,6 +146,8 @@ button {
     color: var(--secondary-text-color);
     padding-top: 32px;
     padding-bottom: 32px;
+
+    transition: color 250ms var(--timing-function);
 }
 
 .link-item:hover,
@@ -174,6 +177,10 @@ button {
     color: var(--primary-text-color);
     display: flex;
     align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    transition: color 250ms var(--timing-function);
 }
 
 .header-contact:hover,
@@ -234,6 +241,8 @@ button {
     padding-left: 32px;
     border-radius: 4px;
     border: none;
+
+    transition: background-color 250ms var(--timing-function);
 }
 
 .hero-button:hover,
@@ -400,6 +409,8 @@ padding-bottom: 27px;
     height: 44px;
     border-radius: 50%;
     color: #AFB1B8;
+
+    transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function);
 }
 
 .social-link:hover,
@@ -437,6 +448,8 @@ padding-bottom: 27px;
     border-radius: 4px;
     background-color: var(--primary-background-color);
     color: #AFB1B8;
+
+    transition: color 250ms var(--timing-function), border-color 250ms var(--timing-function);
 }
 
 .client-link:hover,
@@ -490,6 +503,8 @@ padding-bottom: 27px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--primary-text-darkbackground-color);
+
+    transition: color 250ms var(--timing-function);
 }
 
 .footer-address:hover,
@@ -503,6 +518,8 @@ padding-bottom: 27px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--secondary-text-darkbackground-color);
+
+    transition: color 250ms var(--timing-function);
 }
 
 .footer-contact:hover,
@@ -535,6 +552,8 @@ padding-bottom: 27px;
 .footer .social-link {
 color: var(--primary-text-darkbackground-color);
 background-color: rgba(255, 255, 255, 0.1);
+
+transition: background-color 250ms var(--timing-function);
 }
 
 .footer .social-link:hover,
@@ -553,7 +572,7 @@ background-color: rgba(255, 255, 255, 0.1);
     background-color: rgba(0, 0, 0, 0.2);
 
     opacity: 1;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms var(--timing-function);
 }
 
 .backdrop.is-hidden .modal{
@@ -577,7 +596,7 @@ background-color: rgba(255, 255, 255, 0.1);
     border-radius: 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms var(--timing-function);
 }
 
 .modal-action{
@@ -636,6 +655,8 @@ background-color: rgba(255, 255, 255, 0.1);
     padding-bottom: 6px;
     padding-left: 22px;
     min-width: 73px;
+
+    transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
 
 .button:hover,
@@ -662,6 +683,8 @@ background-color: rgba(255, 255, 255, 0.1);
 .project-list .link {
     display: block;
     border: 1px solid var(--border-portfolio-color);
+
+    transition: box-shadow 250ms var(--timing-function);
 }
 
 .project-list .link:hover,
