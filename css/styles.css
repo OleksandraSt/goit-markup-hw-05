@@ -164,7 +164,7 @@ button {
 .link-current::after {
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -1px;
 
     content: "";
     width: 100%;
@@ -695,6 +695,7 @@ transition: background-color 250ms var(--timing-function);
 
 .project-thumb{
     position: relative;
+    overflow: hidden;
 }
 
 .project-overlay{
@@ -719,7 +720,6 @@ transition: background-color 250ms var(--timing-function);
 
 .action-text{
     position: absolute;
-    overflow: hidden;
     width: 322px;
     height: 168;
     top: 50%;
